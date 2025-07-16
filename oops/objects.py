@@ -95,3 +95,5 @@ l=LivingBeing("human","animalia")
 print(l.details())  # this will print "name:human, kingdom:animalia"
 del l.name  # this will delete the name attribute of the object l
 print(l.details())  # this will raise an error because name attribute is deleted
+
+
