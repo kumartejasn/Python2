@@ -77,3 +77,21 @@ class Education:
 
 e=Education()
 print(e.college("east point","bengaluru"))  # this will print "collegeName:east point, location: bengaluru" 
+
+
+#del 
+# The del statement is used to delete an object or a variable.
+# It can be used to delete an entire object or a specific attribute of an object.
+
+class LivingBeing:
+    def __init__(self,name,kingdom):
+        self.name=name
+        self.kingdom=kingdom
+    
+    def details(self):
+        print(f"name:{self.name},kingdom:{self.kingdom}")
+
+l=LivingBeing("human","animalia")
+print(l.details())  # this will print "name:human, kingdom:animalia"
+del l.name  # this will delete the name attribute of the object l
+print(l.details())  # this will raise an error because name attribute is deleted
