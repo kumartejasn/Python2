@@ -68,3 +68,12 @@ class Person:
 
 p1=Person()
 print(p1.person("tejas", 24) ) # this will print "Name:tejas, Age:24"
+
+
+class Education:
+    @staticmethod
+    def college(collegeName,location):
+        print(f"collegeName:{collegeName}, location:{location}")
+
+e=Education()
+print(e.college("east point","bengaluru"))  # this will print "collegeName:east point, location: bengaluru" 
