@@ -196,3 +196,58 @@ a=Avg(98,88,89)
 print(a.percentage) 
 a.phy=100
 print(a.percentage)
+
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = None
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert_end(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        temp = self.head
+        while temp.next is not None:
+            temp = temp.next
+        temp.next = new_node
+        new_node.prev = temp
+
+    def traverse(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.data, end=" ")
+            temp = temp.next
+        print()
+
+    def search(self, key):
+        temp = self.head
+        while temp is not None:
+            if temp.data == key:
+                print("Found:", key)
+                return
+            temp = temp.next
+        print("Not Found:", key)
+
+# Usage
+dll = DoublyLinkedList()
+dll.insert_end(10)
+dll.insert_end(20)
+dll.insert_end(30)
+dll.insert_end(40)
+
+print("Traversing Doubly Linked List:")
+dll.traverse()
+
+print("Searching for 30:")
+dll.search(30)
+
+print("Searching for 50:")
+dll.search(50)
