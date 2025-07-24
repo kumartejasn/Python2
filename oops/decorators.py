@@ -48,7 +48,8 @@ print(p2.name,p2.age)
 
 
 #@property 
-#The @property decorator in Python is used to define a method as a property, allowing you to access it like an attribute while still being able to define custom behavior for getting and setting its value. This is useful for encapsulating data and providing a clean interface for accessing attributes.
+#The @property decorator in Python is used to define a method as a property, allowing you to access it like an attribute while still being able to define custom behavior for getting and setting its value.
+#This is useful for encapsulating data and providing a clean interface for accessing attributes.
 # It allows you to define methods that can be accessed like attributes, providing a way to control access to the underlying data
 
 class Avg:
