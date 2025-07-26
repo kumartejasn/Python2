@@ -23,7 +23,15 @@
 # print(x+c) # this will add the integer value of v to x
 
 
-a=int(input("enter a intiger: "))
-b=int(input("enter another intiger: "))
-c=(a+b)/2
-print("average of two intigers is",c)
+# a=int(input("enter a intiger: "))
+# b=int(input("enter another intiger: "))
+# c=(a+b)/2
+# print("average of two intigers is",c)
+
+
+# radius of a cricle
+radius = float(input("enter the radius value: "))
+area=(22/7) * (radius**2)
+print(area)
+circum=2*(22/7)*radius
+print(circum)
