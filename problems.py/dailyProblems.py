@@ -81,25 +81,24 @@ class Solution:
         backtrack(target, [], 0)
         return result
 
-# --- Main execution block to run and test the solution ---
+
 if __name__ == '__main__':
-    # Create an instance of the Solution class
+    
     solver = Solution()
 
-    # --- Example 1 ---
+   
     candidates1 = [10, 1, 2, 7, 6, 1, 5]
     target1 = 8
     print(f"Candidates: {candidates1}, Target: {target1}")
     solution1 = solver.combinationSum2(candidates1, target1)
     print(f"Output: {solution1}")
-    # Expected Output: [[1, 1, 6], [1, 2, 5], [1, 7], [2, 6]]
+    
     print("-" * 20)
 
-    # --- Example 2 ---
+   
     candidates2 = [2, 5, 2, 1, 2]
     target2 = 5
     print(f"Candidates: {candidates2}, Target: {target2}")
     solution2 = solver.combinationSum2(candidates2, target2)
     print(f"Output: {solution2}")
-    # Expected Output: [[1, 2, 2], [5]]
     print("-" * 20)
