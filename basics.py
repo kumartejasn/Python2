@@ -35,3 +35,11 @@ area=(22/7) * (radius**2)
 print(area)
 circum=2*(22/7)*radius
 print(circum)
+
+
+number=int(input("enter the number: "))
+
+if(number%5==0 and number%7==0):
+    print("the number is multiple of both 5 and 7")
+else:
+    print("the number is not the multiple of both 5 and 7")
