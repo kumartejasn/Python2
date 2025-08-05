@@ -55,50 +55,58 @@
 # print(result)
 
 
-from typing import List
+# from typing import List
 
-class Solution:
-    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-        result = []
-        candidates.sort()
+# class Solution:
+#     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+#         result = []
+#         candidates.sort()
 
-        def backtrack(remaining, combination, start):
-            if remaining == 0:
-                result.append(list(combination))
-                return
+#         def backtrack(remaining, combination, start):
+#             if remaining == 0:
+#                 result.append(list(combination))
+#                 return
             
-            if remaining < 0:
-                return
+#             if remaining < 0:
+#                 return
 
-            for i in range(start, len(candidates)):
-                if i > start and candidates[i] == candidates[i-1]:
-                    continue
+#             for i in range(start, len(candidates)):
+#                 if i > start and candidates[i] == candidates[i-1]:
+#                     continue
                 
-                combination.append(candidates[i])
-                backtrack(remaining - candidates[i], combination, i + 1)
-                combination.pop()
+#                 combination.append(candidates[i])
+#                 backtrack(remaining - candidates[i], combination, i + 1)
+#                 combination.pop()
 
-        backtrack(target, [], 0)
-        return result
+#         backtrack(target, [], 0)
+#         return result
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     
-    solver = Solution()
+#     solver = Solution()
 
    
-    candidates1 = [10, 1, 2, 7, 6, 1, 5]
-    target1 = 8
-    print(f"Candidates: {candidates1}, Target: {target1}")
-    solution1 = solver.combinationSum2(candidates1, target1)
-    print(f"Output: {solution1}")
+#     candidates1 = [10, 1, 2, 7, 6, 1, 5]
+#     target1 = 8
+#     print(f"Candidates: {candidates1}, Target: {target1}")
+#     solution1 = solver.combinationSum2(candidates1, target1)
+#     print(f"Output: {solution1}")
     
-    print("-" * 20)
+#     print("-" * 20)
 
    
-    candidates2 = [2, 5, 2, 1, 2]
-    target2 = 5
-    print(f"Candidates: {candidates2}, Target: {target2}")
-    solution2 = solver.combinationSum2(candidates2, target2)
-    print(f"Output: {solution2}")
-    print("-" * 20)
+#     candidates2 = [2, 5, 2, 1, 2]
+#     target2 = 5
+#     print(f"Candidates: {candidates2}, Target: {target2}")
+#     solution2 = solver.combinationSum2(candidates2, target2)
+#     print(f"Output: {solution2}")
+#     print("-" * 20)
+
+
+n=int(input("Enter a number: "))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("Number of digits in the number is:", count)   
