@@ -104,9 +104,19 @@
 #     print("-" * 20)
 
 
-n=int(input("Enter a number: "))
-count=0
-while(n>0):
-    count=count+1
-    n=n//10
-print("Number of digits in the number is:", count)   
+# n=int(input("Enter a number: "))
+# count=0
+# while(n>0):
+#     count=count+1
+#     n=n//10
+# print("Number of digits in the number is:", count)   
+
+
+#for loop
+
+students=["tejas", "sachin", "pratik", "siddharth"]
+for student in students:
+    print(student)
+
+for i in range(1,11):
+    print(i)
