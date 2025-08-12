@@ -134,15 +134,39 @@
 # print("Factorial of", n, "is:", f)
 
 
-number = int(input("Enter an integer: "))
 
-reversed_number = 0
-original_number = number
 
-while number > 0:
-    digit = number % 10
-    reversed_number = (reversed_number * 10) + digit
-    number = number // 10
 
-print(f"The reverse of {original_number} is {reversed_number}")
 
+# number = int(input("Enter an integer: "))
+
+# reversed_number = 0
+# original_number = number
+
+# while number > 0:
+#     digit = number % 10
+#     reversed_number = (reversed_number * 10) + digit
+#     number = number // 10
+
+# print(f"The reverse of {original_number} is {reversed_number}")
+
+
+
+
+
+
+N = int(input("Enter the upper limit (N): "))
+prime_numbers = []
+for number in range(2, N + 1):
+    is_prime = True
+    for i in range(2, number):
+        if number % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        prime_numbers.append(number)
+if N > 1:
+    print(f"\nPrime numbers from 1 to {N} are:")
+    print(prime_numbers)
+else:
+    print("\nPlease enter a number greater than 1.")
