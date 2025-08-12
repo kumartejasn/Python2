@@ -112,23 +112,37 @@
 # print("Number of digits in the number is:", count)   
 
 
-#for loop
+# #for loop
 
-students=["tejas", "sachin", "pratik", "siddharth"]
-for student in students:
-    print(student)
+# students=["tejas", "sachin", "pratik", "siddharth"]
+# for student in students:
+#     print(student)
 
-for i in range(1,11):
-    print(i)
+# for i in range(1,11):
+#     print(i)
 
 
-n=int(input("Enter a number: "))
-for i in range(i,n+1):
-    print(i)
+# n=int(input("Enter a number: "))
+# for i in range(i,n+1):
+#     print(i)
 
-# factorial
-n=int(input("Enter a number"))
-f=1
-for i in range(1,n+1):
-    f=f*i
-print("Factorial of", n, "is:", f)
+# # factorial
+# n=int(input("Enter a number"))
+# f=1
+# for i in range(1,n+1):
+#     f=f*i
+# print("Factorial of", n, "is:", f)
+
+
+number = int(input("Enter an integer: "))
+
+reversed_number = 0
+original_number = number
+
+while number > 0:
+    digit = number % 10
+    reversed_number = (reversed_number * 10) + digit
+    number = number // 10
+
+print(f"The reverse of {original_number} is {reversed_number}")
+
