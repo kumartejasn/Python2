@@ -44,29 +44,41 @@
 # else:
 #     print("the number is not the multiple of both 5 and 7")
 
-def find_roots(a, b, c):
-    if a == 0:
-        print("Error: Coefficient 'a' cannot be zero. This is not a quadratic equation.")
-        return
 
-    discriminant = (b**2) - (4 * a * c)
 
-    if discriminant >= 0:
-        root1 = (-b - (discriminant ** 0.5)) / (2 * a)
-        root2 = (-b + (discriminant ** 0.5)) / (2 * a)
+
+# def find_roots(a, b, c):
+#     if a == 0:
+#         print("Error: Coefficient 'a' cannot be zero. This is not a quadratic equation.")
+#         return
+
+#     discriminant = (b**2) - (4 * a * c)
+
+#     if discriminant >= 0:
+#         root1 = (-b - (discriminant ** 0.5)) / (2 * a)
+#         root2 = (-b + (discriminant ** 0.5)) / (2 * a)
         
-        print("\nThe roots of the equation are real.")
-        print(f"Root 1 = {root1}")
-        print(f"Root 2 = {root2}")
-    else:
-        print("\nThe roots of the equation are complex (imaginary).")
+#         print("\nThe roots of the equation are real.")
+#         print(f"Root 1 = {root1}")
+#         print(f"Root 2 = {root2}")
+#     else:
+#         print("\nThe roots of the equation are complex (imaginary).")
 
-if __name__ == "__main__":
-    print("Quadratic Equation Solver (Real Roots Only)")
-    print("Enter the coefficients for the equation ax^2 + bx + c = 0")
+# if __name__ == "__main__":
+#     print("Quadratic Equation Solver (Real Roots Only)")
+#     print("Enter the coefficients for the equation ax^2 + bx + c = 0")
 
-    coeff_a = float(input("Enter coefficient a: "))
-    coeff_b = float(input("Enter coefficient b: "))
-    coeff_c = float(input("Enter coefficient c: "))
+#     coeff_a = float(input("Enter coefficient a: "))
+#     coeff_b = float(input("Enter coefficient b: "))
+#     coeff_c = float(input("Enter coefficient c: "))
 
-    find_roots(coeff_a, coeff_b, coeff_c)
+#     find_roots(coeff_a, coeff_b, coeff_c)
+
+
+
+def fun1(a,b):
+    result=a/b
+    print(result)
+a=int(input("Enter the value of a: "))
+b=int(input("Enter the value of b: "))
+fun1(a,b)

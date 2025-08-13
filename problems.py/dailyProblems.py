@@ -155,18 +155,22 @@
 
 
 
-N = int(input("Enter the upper limit (N): "))
-prime_numbers = []
-for number in range(2, N + 1):
-    is_prime = True
-    for i in range(2, number):
-        if number % i == 0:
-            is_prime = False
-            break
-    if is_prime:
-        prime_numbers.append(number)
-if N > 1:
-    print(f"\nPrime numbers from 1 to {N} are:")
-    print(prime_numbers)
-else:
-    print("\nPlease enter a number greater than 1.")
+# N = int(input("Enter the upper limit (N): "))
+# prime_numbers = []
+# for number in range(2, N + 1):
+#     is_prime = True
+#     for i in range(2, number):
+#         if number % i == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         prime_numbers.append(number)
+# if N > 1:
+#     print(f"\nPrime numbers from 1 to {N} are:")
+#     print(prime_numbers)
+# else:
+#     print("\nPlease enter a number greater than 1.")
+
+
+
+
