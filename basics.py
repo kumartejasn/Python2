@@ -82,3 +82,4 @@ def fun1(a,b):
 a=int(input("Enter the value of a: "))
 b=int(input("Enter the value of b: "))
 fun1(a,b)
+
