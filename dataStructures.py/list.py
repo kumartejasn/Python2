@@ -62,11 +62,31 @@
 
 
 
-def multiply(numbers):
-    total=1
-    for i in numbers:
-        total *= i
-    print(total)
-    return total
-multiply([5,3,6,7])
-print(multiply([1,2,3,4,5]))  
+# def multiply(numbers):
+#     total=1
+#     for i in numbers:
+#         total *= i
+#     print(total)
+#     return total
+# multiply([5,3,6,7])
+# print(multiply([1,2,3,4,5]))  
+
+
+# # factorial of a function using recursion
+def fact(n):
+    if n==1 or n==0:
+        return 1
+    else:
+        return n* fact(n-1)
+n=int(input("Enter the number to find the factorial: " ))
+print(fact(n))
+
+
+# McCarthy 91 function
+def m(n):
+    if n > 100:
+        return n-10
+    else:
+        return m(m(n+11))
+result=int(input("Enter the value of n:"))
+print(m(result))
